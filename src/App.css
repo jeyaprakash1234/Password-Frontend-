@@ -1,38 +1,262 @@
-.App {
-  text-align: center;
+body {
+  
+  background-color: none;
+    background : linear-gradient(to right,#1f3c2245, rgba(7, 119, 31, 0.116));
+  font-family: Arial, sans-serif;
+  color:#0e0d0d;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-size: cover;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+ 
+  .Navbar {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  
   }
-}
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6a5acd !important;
+    text-transform: uppercase;
+  }
+  
+  .navbar-brand .logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  
+  @media (max-width:800px){
+    .navbar-nav  .nav-link{
+    
+    width: 55px;
+    height: 10px;
+  
+    
+    outline: none;
+    border: none;
+    border-radius: none;
+    color: #514e4e;
+    font-size: 10px;
+    font-weight: bold;
+    background: transparent ;
+    display: flex;
+    text-align: center;
+  
+  
+     
+    
+  
+  
+  
+    }
+  
+  
+  
+  }
+  
+   /* .nav-link:hover{
+   
+    
+    transform: scale(1.1);
+    color: #007bff; 
+    
+   }
+     */
+  
+  
+  
+  @media (max-width: 767px) {
+    .Navbar-brand img {
+      width: 100px;
+    }
+  
+    /* .Navbar-nav {
+      margin-left: 0;
+      text-align: center;
+    }
+     */
+  }
+  
+  .form-container {
+    
+    max-width: 600px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+    margin: auto;
+    padding: 20px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
+    
+
+      background-color: white;
+     
+  }
+  
+  
+  .form-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-control {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #5b5050;
+  } 
+  
+  .error-message {
+    color: red;
+    font-size: 0.875rem;
+  }
+  
+  .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+   
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+  
+  
+  /* Home.css */
+
+.home-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5; /* Light background color */
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.welcome-text {
+  font-size: 3rem;
+  color: #333; /* Dark text color */
+  text-align: center;
+  font-weight: bold;
 }
+ 
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+ .login-form-container {
+    /* background: url('../assets/images/laundry-register-bg.jpg') no-repeat center center fixed; */
+    background-size: cover;
+    height: 100vh; 
+  
+    margin: 20px;
+    width: auto;
+    padding: 200px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    
+} 
+
+.btn:hover {
+  background-color: #0056b3;
+}  
+
+@media (max-width: 767px) {
+  .login-form-container {
+    background-size: cover;
   }
-  to {
-    transform: rotate(360deg);
+
+  .login-form {
+    width: 90%;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .login-form-container {
+    background-size: cover;
+  }
+
+  .login-form {
+    width: 80%;
+  }
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+}
+
+
+.register-form-container {
+    /* background: url('../assets/images/laundry-register-bg.jpg') no-repeat center center fixed; */
+    background-size: cover;
+    height: 100vh; 
+    display: flex;
+    width: 100%; /* Adjust percentage as needed for medium size */
+  /* Set a maximum width for larger screens */
+    padding: 0;
+    padding: 200px ;
+    margin: -30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.btn:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 767px) {
+  .register-form-container {
+    background-size: cover;
+  }
+
+  .register-form{
+    width: 90%;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .register-form-container {
+    background-size: cover;
+  }
+
+  .register-form {
+    width: 80%;
   }
 }
