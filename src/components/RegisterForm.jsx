@@ -32,7 +32,7 @@ function RegisterForm  ()  {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/register', { name, email, password });
+      const response = await axios.post('https://password-backend-q26r.onrender.com/api/auth/register', { name, email, password });
       if(response.status === 200  ) {
         Swal.fire({
             title: "Good job!",

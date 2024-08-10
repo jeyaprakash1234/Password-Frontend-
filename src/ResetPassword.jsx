@@ -29,7 +29,7 @@ function ResetPassword  () {
       e.preventDefault();
 
       try {
-        const response = await axios.post(`http://localhost:5000/api/auth/reset-password/${id}/${token}`, { password });
+        const response = await axios.post(`https://password-backend-q26r.onrender.com/api/auth/reset-password/${id}/${token}`, { password });
         if(response.status === 200  ) {
             alert('Reset successfully')
             navigate('/login')

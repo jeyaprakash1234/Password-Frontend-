@@ -32,7 +32,7 @@ function LoginForm  () {
       e.preventDefault();
 
       try {
-        const response = await axios.post('http://localhost:5000/api/auth/login', { email, password });
+        const response = await axios.post('https://password-backend-q26r.onrender.com/api/auth/login', { email, password });
 
         if(response.status === 200  ) {
            
